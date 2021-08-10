@@ -1,0 +1,185 @@
+body {
+  margin: 0;
+  font-family: -apple-system, 'Oswald','Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 5px 0px;        
+}
+
+h2 {
+  margin: 10px 0px;
+}
+
+.App {
+  padding: 20px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.Mui-selected {
+  background: #e6e6e6 !important;
+}
+
+.MuiTab-wrapper {
+  align-items: start !important;
+}
+
+.MuiTab-root {
+  width: 100%;
+  max-width: none !important;
+  padding: 6px 20px !important;
+}
+
+.MuiTabPanel-root {
+  padding: 0px !important;
+}
+
+.MuiTab-root {
+  font-family: -apple-system, 'Oswald','Roboto', sans-serif !important;
+}
+
+.MuiAppBar-colorPrimary {
+  color: black !important;
+  background-color: white !important;
+}
+
+header.MuiPaper-root {
+  border-radius: 10px !important;
+}
+
+.current {
+  margin-bottom: 20px;
+  border: 1px lightgrey solid;
+  padding: 15px 20px 20px;
+  box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+  background: linear-gradient(151deg, rgb(249 219 219) 0%, rgba(236,110,76,1) 100%);
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+.current__city {
+  text-align: right;
+}
+
+.forecast {
+  width: 420px;
+  margin: auto;
+}
+
+.daily {
+  border: 1px lightgrey solid;
+  padding: 15px 20px 30px;
+  margin-bottom: 20px;
+  box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+  border-radius: 10px;
+}
+
+.daily__info {
+  display: flex;
+  align-items: center;
+}
+
+.daily__data {
+  text-align: right;
+}
+
+.daily__temp {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.daily__temp>div {
+  margin-right: 20px;
+}
+
+.temp {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.feels {
+  font-size: 13px;
+  color: grey;
+  font-weight: 300;
+}
+
+.day {
+  display: flex;
+  align-items: center;
+}
+
+.day__date {
+  text-align: left;
+}
+
+.tablist {
+  max-height: 400px;
+}
+
+.alert {
+  border: 5px solid black;
+  background: yellow;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+
+  .App {
+    padding: 20px 20px;
+  }
+
+  .forecast {
+    width: 100%;
+  }
+
+  .daily__temp {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .daily__info {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: start;
+  }
+
+  .daily__date {
+    order: 2;
+  }
+
+  .daily__image {
+    order: 1;
+  }
+
+  .daily__data {
+    order: 3;
+  }
+}
